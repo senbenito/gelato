@@ -3,9 +3,18 @@ import logo from './logo.svg';
 import StartTerm from './components/StartTerm.js'
 import EndTerm from './components/EndTerm.js'
 import Directions from './components/Directions'
+// import Mappy from './components/Mappy.js'
 import './App.css';
 
 class App extends Component {
+   constructor(props){
+      super(props)
+      this.state = {
+         StartTerm : 'Boulder CO',
+         EndTerm: 'Denver CO'
+      }
+   }
+
   render() {
     return (
       <div className="App">
@@ -16,8 +25,10 @@ class App extends Component {
         <StartTerm />
         <EndTerm />
         <button> submit </button>
-        <Directions />
-
+        <Directions
+            StartTerm={ this.state.StartTerm }
+            EndTerm={ this.state.EndTerm }
+             />
       </div>
     );
   }

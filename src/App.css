@@ -22,3 +22,11 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.map {
+   width: 600px;
+   height: 450px;
+   frameborder: 0;
+   border: 0;
+
+}
