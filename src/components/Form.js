@@ -25,8 +25,8 @@ class Form extends Component {
       console.log('from state start', this.state.StartTerm);
       return (
          <form>
-            <input type="text" onChange={ this.handleStartChange } />
-            <input onChange={ this.handleEndChange } />
+            <input placeholder="start location" type="text" onChange={ this.handleStartChange } />
+            <input placeholder="destination" onChange={ this.handleEndChange } />
             <input type="submit" onClick={(event) => this.props.setTerms(this.state.StartTerm, this.state.EndTerm, event)} />
          </form>
       )

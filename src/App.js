@@ -31,8 +31,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Its Cream Time</h2>
+          <img src={'https://s-media-cache-ak0.pinimg.com/originals/9c/36/1f/9c361fd7c7d2311b9cf776490de7b600.gif'} className="App-logo" alt="logo" />
+          <h2> Gela.to </h2>
         </div>
         <Form setTerms={ this.setTerms }/>
         <Directions
