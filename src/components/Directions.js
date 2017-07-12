@@ -1,16 +1,15 @@
 import React, {Component} from 'react';
 
 class Directions extends Component{
-   constructor(props){
-      super(props)
+  constructor(props){
+     super(props)
    }
-
    render(){
-      let url = `https://www.google.com/maps/embed/v1/directions?key=AIzaSyDu22c6aKA6YrRNOQs9TusUKMWoA7KHBH8&origin=${ this.props.StartTerm }&waypoints=gelato%20${ this.props.EndTerm }&destination=${ this.props.EndTerm }`
+      let url = `https://www.google.com/maps/embed/v1/directions?key=AIzaSyB3FN8mhs7x6Zr2r0xZKHs9O04Xq4X2r0I&origin=${ this.props.StartTerm }&waypoints=${ this.props.FrozenTerm }&destination=${ this.props.EndTerm }`
       let elm = null
       if (true) {
-         elm =     <iframe className="map"
-                    src={ url } allowfullscreen>
+         elm =     <iframe title="map" className="map"
+                    src={ url } allowFullScreen>
                   </iframe>
       }
 
